@@ -1,0 +1,70 @@
+{
+    "theme": {
+      "main": {
+        "preferences": {
+          "menuLeftEnabled": "false",
+          "menuCenterEnabled": "true",
+          "menuBottomEnabled": "true",
+          "tipsEnabled": "false",
+          "badgesEnabled": "true",
+          "copyrightEnabled": "true",
+          "authorBottomLeftEnabled": "true",
+          "sloganEnabled": "true",
+          "titleEnabled": "true"
+        },
+        "active": "true",
+        "colors": {
+          "main": "",
+          "secondary": "",
+          "third": "",
+        },
+        "typo": "",
+        "sprite": "",
+        "logo": ""
+      },
+      "secondary": {
+        "preferences": {
+          "menuLeftEnabled": "",
+          "menuCenterEnabled": "",
+          "menuBottomEnabled": "",
+          "tipsEnabled": "",
+          "badgesEnabled": "",
+          "copyrightEnabled": "",
+          "authorBottomLeftEnabled": "",
+          "sloganEnabled": "",
+          "titleEnabled": ""
+        },
+        "active": "",
+        "colors": {
+          "main": {},
+          "secondary": {},
+          "third": {}
+        },
+        "typo": "",
+        "sprite": "",
+        "logo": ""
+      },
+      "special": {
+        "preferences": {
+          "menuLeftEnabled": "",
+          "menuCenterEnabled": "",
+          "menuBottomEnabled": "",
+          "tipsEnabled": "",
+          "badgesEnabled": "",
+          "copyrightEnabled": "",
+          "authorBottomLeftEnabled": "",
+          "sloganEnabled": "",
+          "titleEnabled": ""
+        },
+        "active": "",
+        "colors": {
+          "main": {},
+          "secondary": {},
+          "third": {}
+        },
+        "typo": "",
+        "sprite": "",
+        "logo": ""
+      }
+    }
+}

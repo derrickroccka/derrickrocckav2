@@ -1,0 +1,52 @@
+{
+  "site": {
+    "menu": {
+      "links": [
+        {
+          "link1": {
+            "active": {},
+            "url": {}
+          },
+          "link2": {
+            "active": {},
+            "url": {}
+          }
+        }
+      ]
+    },
+    "brandLogo": {
+      "xl": "",
+      "l": "",
+      "m": "",
+      "s": ""
+    },
+    "favicon": "",
+    "title": "",
+    "tagline": "",
+    "copyright": "",
+    "slogan": "",
+    "icons": {
+      "social": {
+        "twitter": "",
+        "youtube": "",
+        "linkedIn": "",
+        "codePen": "",
+        "gitHub": ""
+      },
+      "itemDecoration": {
+        "completion": "",
+        "link": "",
+        "isNew": "",
+        "guild": "",
+        "isWebApp": "",
+        "isHybridApp": "",
+        "isCMS": "",
+        "isExperimental": "",
+        "isYouTube": "",
+        "isDesign": "",
+        "isEnterprise": "",
+        "status": ""
+      }
+    }
+  }
+}
