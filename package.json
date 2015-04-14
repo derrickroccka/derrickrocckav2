@@ -32,7 +32,8 @@
     "karma": "~0.12.31",
     "karma-ng-html2js-preprocessor": "~0.1.2",
     "grunt-ng-constant": "~1.1.0",
-    "grunt-html-snapshot": "~0.6.1"
+    "grunt-html-snapshot": "~0.6.1",
+    "grunt-html-snapshots": "~0.6.0"
   },
   "engines": {
     "node": ">=0.10.0"

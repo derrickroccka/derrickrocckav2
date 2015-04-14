@@ -14,7 +14,8 @@
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'ui.router'
   ]);
 
 	/**
@@ -39,24 +40,29 @@
 	* @name Config function
 	* 
 	* @description Defines the configuration of the app
-	* @param {Object} $routeProvider
+	* @param {Object} $stateProvider
 	* @param {Object} $locationProvider
 	**/
 	
-	function Config($routeProvider, $locationProvider){
-    $routeProvider
-      .when('/', {
+	function Config($stateProvider,$urlRouterProvider,$locationProvider){
+    $stateProvider
+      .state('home',{
+        url:'/home',
+        abstract: false,
         templateUrl: 'templates/home.html',
-        controller: 'ControllerHome',
-        controllerAs: 'home'
+        controller: 'ControllerHome as home',
       })
-      .otherwise({
-        redirectTo: '/'
+      .state('test',{
+        url:'/test',
+        abstract: false,
+        templateUrl: 'templates/test.html',
+        controller: 'ControllerHome as home'
       });
-		$locationProvider.html5Mode(true);
+    $urlRouterProvider.otherwise('/home');
+		$locationProvider.html5Mode(false);
 	}
 	//Injecting dependencies into Config function
-	Config.$inject = ['$routeProvider', '$locationProvider'];
+	Config.$inject = ['$stateProvider','$urlRouterProvider','$locationProvider'];
 	//Attatching Config function into the app
 	angular
 		.module('drkv2App')
