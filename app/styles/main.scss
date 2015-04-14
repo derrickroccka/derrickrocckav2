@@ -1,9 +1,11 @@
 // bower:scss
 // endbower
 // Your application styles go here
+@import "breakpoint-sass/stylesheets/_breakpoint.scss";
+
 body{
     &.theme-1{
-        background: #fff200; 
+        background: #fff200;
     }
 }
 
