@@ -10,7 +10,6 @@
 	**/
 	function ControllerHome(){
 		var vm = this;
-
 		vm.rotatingWords = ['a dev','...','this(8)','dy','a youtuber','a gamer','#fifalover','a man','creativity','creactivity','professional','happiness','a robot','a creator','a crazy guy','ingenio'];
 	}
 	//Injecting dependencies into ControllerHome function

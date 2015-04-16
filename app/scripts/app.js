@@ -11,12 +11,12 @@
 (function(){
 	//Define the main module of the app
 	angular.module('drkv2App', [
-    'ngCookies',
-    'ngResource',
-    'ngSanitize',
-    'ngRoute',
-    'ui.router'
-  ]);
+		'ngCookies',
+		'ngResource',
+		'ngSanitize',
+		'ngRoute',
+		'ui.router'
+	]);
 
 	/**
 	*
@@ -32,8 +32,8 @@
 	Run.$inject = [];
 	//Attatching Run function into the app
 	angular
-		.module('drkv2App')
-		.run(Run);
+	.module('drkv2App')
+	.run(Run);
 
 	/**
 	*
@@ -45,27 +45,27 @@
 	**/
 	
 	function Config($stateProvider,$urlRouterProvider,$locationProvider){
-    $stateProvider
-      .state('home',{
-        url:'/home',
-        abstract: false,
-        templateUrl: 'templates/home.html',
-        controller: 'ControllerHome as home',
-      })
-      .state('test',{
-        url:'/test',
-        abstract: false,
-        templateUrl: 'templates/test.html',
-        controller: 'ControllerHome as home'
-      });
-    $urlRouterProvider.otherwise('/home');
+		$stateProvider
+		.state('home',{
+			url:'/home',
+			abstract: false,
+			templateUrl: 'templates/home.html',
+			controller: 'ControllerHome as home',
+			resolve: {
+				// TODO se resolverán todos al cargar la home, luego se inyectarán en cada uno de sus ctrl
+				Author: function(ServiceHelpers){
+					return ServiceHelpers.readJsonFile('data/author.json');
+				}
+			}
+		});
+		$urlRouterProvider.otherwise('/home');
 		$locationProvider.html5Mode(false);
 	}
 	//Injecting dependencies into Config function
 	Config.$inject = ['$stateProvider','$urlRouterProvider','$locationProvider'];
 	//Attatching Config function into the app
 	angular
-		.module('drkv2App')
-		.config(Config);
+	.module('drkv2App')
+	.config(Config);
 
 })();
