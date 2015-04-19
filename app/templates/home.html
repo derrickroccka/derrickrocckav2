@@ -2,13 +2,13 @@
 	<figure id="homeLogo">
 		<img src="{{theme.activeTheme.logo.layer0}}" alt="Logo de Derrick Roccka para el tema 1">
 	</figure>
-	<figure id="homeLogoMoreThan">
+	<figure id="homeLogoMoreThan" ngfx-flash="home.animations.logo.activeLayer === 1" ng-show="home.animations.logo.activeLayer > 0" ngfx-speed="fast">
 		<img src="{{theme.activeTheme.logo.layer1}}" alt="Logo de Derrick Roccka para el tema 1">
 	</figure>
-	<figure id="homeLogoUnderline">
+	<figure id="homeLogoUnderline" ngfx-tada="home.animations.logo.activeLayer === 2" ng-show="home.animations.logo.activeLayer > 1" ngfx-speed="medium">
 		<img src="{{theme.activeTheme.logo.layer2}}" alt="Logo de Derrick Roccka para el tema 1">
 	</figure>
-		<figure id="homeLogoBubbles">
+		<figure id="homeLogoBubbles" ngfx-fade-in-up="home.animations.logo.activeLayer === 3" ng-show="home.animations.logo.activeLayer > 2" ngfx-speed="slow">
 		<img src="{{theme.activeTheme.logo.layer3}}" alt="Logo de Derrick Roccka para el tema 1">
 	</figure>
 </div>
