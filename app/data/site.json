@@ -1,52 +1,46 @@
 {
-  "site": {
-    "menu": {
-      "links": [
-        {
-          "link1": {
-            "active": {},
-            "url": {}
-          },
-          "link2": {
-            "active": {},
-            "url": {}
-          }
-        }
-      ]
+  "menu": {
+    "home": {
+      "active": true,
+      "url": "/home"
     },
-    "brandLogo": {
-      "xl": "",
-      "l": "",
-      "m": "",
-      "s": ""
+    "test": {
+      "active": true,
+      "url": "/test"
+    }
+  },
+  "brandLogo": {
+    "xl": "/images/brand-logo-xl.png",
+    "l": "/images/brand-logo-l.png",
+    "m": "/images/brand-logo-m.png",
+    "s": "/images/brand-logo-s.png"
+  },
+  "favicon": "/images/icons/favicon.png",
+  "title": "Derrick Roccka is here!",
+  "tagline": "More than",
+  "copyright": "Derrick Roccka √",
+  "slogan": "Do the knowledge",
+  "icons": {
+    "social": {
+      "twitter": "",
+      "youtube": "",
+      "linkedIn": "",
+      "codePen": "",
+      "gitHub": ""
     },
-    "favicon": "",
-    "title": "",
-    "tagline": "",
-    "copyright": "",
-    "slogan": "",
-    "icons": {
-      "social": {
-        "twitter": "",
-        "youtube": "",
-        "linkedIn": "",
-        "codePen": "",
-        "gitHub": ""
-      },
-      "itemDecoration": {
-        "completion": "",
-        "link": "",
-        "isNew": "",
-        "guild": "",
-        "isWebApp": "",
-        "isHybridApp": "",
-        "isCMS": "",
-        "isExperimental": "",
-        "isYouTube": "",
-        "isDesign": "",
-        "isEnterprise": "",
-        "status": ""
-      }
+    "itemDecoration": {
+      "completion": "",
+      "link": "",
+      "isNew": "",
+      "guild": "",
+      "isWebApp": "",
+      "isHybridApp": "",
+      "isCMS": "",
+      "isExperimental": "",
+      "isYouTube": "",
+      "isDesign": "",
+      "isEnterprise": "",
+      "status": ""
     }
   }
 }

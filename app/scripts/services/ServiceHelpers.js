@@ -36,7 +36,7 @@
 				var deferred = $q.defer();
 				$http.get(jsonFile.path).success(function(response) {
 					// stores file data into 'jsonFile.content'
-					console.log(response);
+					console.log('OBJETO RESPUESTA READJSONFILE',response);
 					jsonFile.content = response;
 					deferred.resolve(jsonFile.content);
 				});

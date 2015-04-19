@@ -15,7 +15,8 @@
 		'ngResource',
 		'ngSanitize',
 		'ngRoute',
-		'ui.router'
+		'ui.router',
+		'720kb.fx'
 	]);
 
 	/**
@@ -32,8 +33,8 @@
 	Run.$inject = [];
 	//Attatching Run function into the app
 	angular
-	.module('drkv2App')
-	.run(Run);
+		.module('drkv2App')
+		.run(Run);
 
 	/**
 	*
@@ -46,17 +47,26 @@
 	
 	function Config($stateProvider,$urlRouterProvider,$locationProvider){
 		$stateProvider
+		.state('root',{
+			abstract: true,
+			template:'<div id="container" class="container" ui-view></div>',
+			controller: 'ControllerTheme as theme',
+			resolve: {
+				// // TODO se resolverán todos los json al cargar la home, luego se inyectarán en cada uno de sus ctrl
+				Author: function(ServiceHelpers){
+					return ServiceHelpers.readJsonFile('data/author.json');
+				},
+				Themes: function(ServiceHelpers){
+					return ServiceHelpers.readJsonFile('data/themes.json');
+				}
+			}
+		})
 		.state('home',{
+			parent: 'root',
 			url:'/home',
 			abstract: false,
 			templateUrl: 'templates/home.html',
-			controller: 'ControllerHome as home',
-			resolve: {
-				// TODO se resolverán todos al cargar la home, luego se inyectarán en cada uno de sus ctrl
-				Author: function(ServiceHelpers){
-					return ServiceHelpers.readJsonFile('data/author.json');
-				}
-			}
+			controller: 'ControllerHome as home'
 		});
 		$urlRouterProvider.otherwise('/home');
 		$locationProvider.html5Mode(false);
@@ -65,7 +75,7 @@
 	Config.$inject = ['$stateProvider','$urlRouterProvider','$locationProvider'];
 	//Attatching Config function into the app
 	angular
-	.module('drkv2App')
-	.config(Config);
+		.module('drkv2App')
+		.config(Config);
 
 })();

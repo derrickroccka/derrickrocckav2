@@ -1,70 +1,30 @@
 {
-    "theme": {
-      "main": {
-        "preferences": {
-          "menuLeftEnabled": "false",
-          "menuCenterEnabled": "true",
-          "menuBottomEnabled": "true",
-          "tipsEnabled": "false",
-          "badgesEnabled": "true",
-          "copyrightEnabled": "true",
-          "authorBottomLeftEnabled": "true",
-          "sloganEnabled": "true",
-          "titleEnabled": "true"
-        },
-        "active": "true",
-        "colors": {
-          "main": "",
-          "secondary": "",
-          "third": "",
-        },
-        "typo": "",
-        "sprite": "",
-        "logo": ""
+    "theme-1": {
+      "name": "theme1",
+      "preferences": {
+        "menuLeftEnabled": false,
+        "menuCenterEnabled": true,
+        "menuBottomEnabled": true,
+        "tipsEnabled": false,
+        "badgesEnabled": false,
+        "copyrightEnabled": true,
+        "authorBottomLeftEnabled": true,
+        "sloganEnabled": true,
+        "titleEnabled": true
       },
-      "secondary": {
-        "preferences": {
-          "menuLeftEnabled": "",
-          "menuCenterEnabled": "",
-          "menuBottomEnabled": "",
-          "tipsEnabled": "",
-          "badgesEnabled": "",
-          "copyrightEnabled": "",
-          "authorBottomLeftEnabled": "",
-          "sloganEnabled": "",
-          "titleEnabled": ""
-        },
-        "active": "",
-        "colors": {
-          "main": {},
-          "secondary": {},
-          "third": {}
-        },
-        "typo": "",
-        "sprite": "",
-        "logo": ""
+      "active": true,
+      "colors": {
+        "main": "#fff200",
+        "secondary": "#000",
+        "third": "#fff"
       },
-      "special": {
-        "preferences": {
-          "menuLeftEnabled": "",
-          "menuCenterEnabled": "",
-          "menuBottomEnabled": "",
-          "tipsEnabled": "",
-          "badgesEnabled": "",
-          "copyrightEnabled": "",
-          "authorBottomLeftEnabled": "",
-          "sloganEnabled": "",
-          "titleEnabled": ""
-        },
-        "active": "",
-        "colors": {
-          "main": {},
-          "secondary": {},
-          "third": {}
-        },
-        "typo": "",
-        "sprite": "",
-        "logo": ""
+      "typo": "",
+      "sprite": "",
+      "logo": {
+        "layer0": "/images/theme-1/logo.png",
+        "layer1": "/images/theme-1/logoLayerMoreThan.png",
+        "layer2": "/images/theme-1/logoLayerUnderline.png",
+        "layer3": "/images/theme-1/logoLayerBubbles.png"
       }
     }
 }

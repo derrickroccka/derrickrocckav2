@@ -1,0 +1,43 @@
+.theme1{
+	#homeLogoContainer{
+		margin: 0 auto;
+		position: relative;
+		width: 240px;
+		@include breakpoint($breakpoint-medium-range) {
+			width: 480px;
+		}
+		@include breakpoint($breakpoint-large-range) {
+			width: 768px;
+		}
+
+		@mixin homeLogoLayer($z-index){
+			left: 0;
+			margin: 0 auto;
+			position: absolute;
+			top: 0;
+			width: 240px;
+			z-index: $z-index;
+			@include breakpoint($breakpoint-medium-range) {
+				width: 480px;
+			}
+			@include breakpoint($breakpoint-large-range) {
+				width: 768px;
+			}
+			img{
+				width: 100%;
+			}
+		}
+		#homeLogo{
+			@include homeLogoLayer(0);
+		}
+		#homeLogoMoreThan{
+			@include homeLogoLayer(1);
+		}
+		#homeLogoUnderline{
+			@include homeLogoLayer(2);
+		}
+		#homeLogoBubbles{
+			@include homeLogoLayer(3);
+		}
+	}
+}
