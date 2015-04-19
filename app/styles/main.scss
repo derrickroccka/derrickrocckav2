@@ -1,7 +1,10 @@
 // bower:scss
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 // endbower
 // Your application styles go here
+@import "bourbon/app/assets/stylesheets/_bourbon";
 @import "../styles/_variables.scss";
+@import "../styles/_mixins.scss";
 @import "breakpoint-sass/stylesheets/_breakpoint.scss";
 @import "../styles/_home.scss";
 
