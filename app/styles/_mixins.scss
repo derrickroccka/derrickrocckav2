@@ -1,0 +1,17 @@
+@mixin homeLogoLayer($z-index){
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	width: 240px;
+	z-index: $z-index;
+	@include breakpoint($breakpoint-medium-range) {
+		width: 480px;
+	}
+	@include breakpoint($breakpoint-large-range) {
+		width: 768px;
+	}
+	img{
+		width: 100%;
+	}
+}
