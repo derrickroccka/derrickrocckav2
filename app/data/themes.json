@@ -10,7 +10,8 @@
         "copyrightEnabled": true,
         "authorBottomLeftEnabled": true,
         "sloganEnabled": true,
-        "titleEnabled": true
+        "titleEnabled": true,
+        "headerEnabled": true
       },
       "active": true,
       "colors": {
