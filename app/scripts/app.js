@@ -49,7 +49,7 @@
 		$stateProvider
 		.state('root',{
 			abstract: true,
-			template:'<div id="container" class="container" ui-view></div>',
+			// templateUrl: 'templates/root.html',
 			controller: 'ControllerTheme as theme',
 			resolve: {
 				// // TODO se resolverán todos los json al cargar la home, luego se inyectarán en cada uno de sus ctrl
@@ -58,15 +58,37 @@
 				},
 				Themes: function(ServiceHelpers){
 					return ServiceHelpers.readJsonFile('data/themes.json');
+				},
+				Site: function(ServiceHelpers){
+					return ServiceHelpers.readJsonFile('data/site.json');
+				},
+				Header: function(ServiceHelpers){
+					return ServiceHelpers.readJsonFile('data/header.json');
+				}
+			},
+			views: {
+				'': {
+					templateUrl: 'templates/root.html',
+					controller: 'ControllerTheme as theme'
+				},
+				'header@root': {
+					templateUrl: 'templates/root.header.html',
+					controller: 'ControllerHeader as header'
 				}
 			}
 		})
-		.state('home',{
+		.state('root.home',{
 			parent: 'root',
 			url:'/home',
 			abstract: false,
-			templateUrl: 'templates/home.html',
-			controller: 'ControllerHome as home'
+			// templateUrl: 'templates/home.html',
+			// controller: 'ControllerHome as home'
+			views: {
+				'home': {
+					templateUrl: 'templates/root.home.html',
+					controller: 'ControllerHome as home'
+				}
+			}
 		});
 		$urlRouterProvider.otherwise('/home');
 		$locationProvider.html5Mode(false);

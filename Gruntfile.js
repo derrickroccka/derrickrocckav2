@@ -95,8 +95,8 @@ module.exports = function (grunt) {
       options: {
         port: 9001,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: '127.0.0.1',
-        livereload: 35730
+        hostname: '0.0.0.0',
+        livereload: 35729
       },
       livereload: {
         options: {
@@ -451,7 +451,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
-      'html_snapshots:debug',
+      // 'html_snapshots:debug',
       // 'htmlSnapshot',
       'watch'
     ]);

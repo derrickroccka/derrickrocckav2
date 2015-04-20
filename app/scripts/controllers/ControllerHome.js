@@ -31,7 +31,6 @@
 			rotatingWords: {
 				count: 0,
 				init: function(){
-					console.log(vm.animations.rotatingWords.count);
 					if(vm.rotatingWords.list.length-1 === vm.animations.rotatingWords.count){
 						vm.animations.rotatingWords.count = 0;
 					}

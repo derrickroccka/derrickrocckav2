@@ -6,9 +6,11 @@
 @import "../styles/_variables.scss";
 @import "../styles/_mixins.scss";
 @import "breakpoint-sass/stylesheets/_breakpoint.scss";
+@import "../styles/_header.scss";
 @import "../styles/_home.scss";
 
 body{
+	margin-top: 10%;
     &.theme1{
         background: #fff200;
     }
