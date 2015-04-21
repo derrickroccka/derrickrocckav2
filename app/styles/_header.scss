@@ -19,12 +19,20 @@
 		#headerTitle{
 			// display: inline-block;
 			// float: left;
+			@include breakpoint($breakpoint-small-range) {
+				font-size: 0.75rem;
+			}
+			@include breakpoint($breakpoint-medium-range) {
+				font-size: 1rem;
+			}
 			color: $color-text-header;
 			font-family: $font-secondary;
-			line-height: 32px;
+			font-size: 1rem;
+			line-height: 2rem;
 			margin: 0 auto;
 			text-align: center;
 			width: 240px;
+
 		}
 		#headerSlogan{
 			@include transform(rotate(-18deg));

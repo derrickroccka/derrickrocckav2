@@ -7,9 +7,13 @@
         "menuBottomEnabled": true,
         "tipsEnabled": false,
         "badgesEnabled": false,
-        "copyrightEnabled": true,
+        "copyright": {
+          "enabled": true
+        },
         "authorBottomLeftEnabled": true,
-        "headerEnabled": true
+        "header": {
+          "enabled": true
+        }
       },
       "active": true,
       "colors": {

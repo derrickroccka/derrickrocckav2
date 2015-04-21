@@ -49,6 +49,9 @@ body{
 	margin-top: 96px;
     &.theme1{
         background: #fff200;
+        blockquote{
+        	font-size: $font-quote !important; 
+        }
     }
 }
 
