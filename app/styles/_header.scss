@@ -1,0 +1,43 @@
+.theme1{
+	#header{
+		background: $bg-header;
+		height: 64px;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+		#headerBrandLogo{
+			display: inline-block;
+			float: left;
+			width: 32px;
+			vertical-align: middle;
+			img{
+				width: 32px;
+			}
+		}
+		#headerTitle{
+			// display: inline-block;
+			// float: left;
+			color: $color-text-header;
+			font-family: $font-secondary;
+			line-height: 32px;
+			margin: 0 auto;
+			text-align: center;
+			width: 240px;
+		}
+		#headerSlogan{
+			@include transform(rotate(-18deg));
+			color: $color-text-header;
+			font-family: $font-quote;
+			font-size: 1.50rem;
+			line-height: 64px;
+			text-align: center;
+			text-decoration: underline;
+			text-shadow: 1px -1px 6px #fff200;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+}

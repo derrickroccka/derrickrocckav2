@@ -1,0 +1,16 @@
+{
+	"brandLogo":{
+		"enabled": true,
+		"position": "left"
+	},
+	"tagline":{
+		 "enabled": true
+    },
+    "title": {
+    	"enabled": true
+    },
+    "slogan": {
+    	"enabled": true
+    }
+
+}

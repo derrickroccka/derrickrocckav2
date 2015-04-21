@@ -9,8 +9,6 @@
         "badgesEnabled": false,
         "copyrightEnabled": true,
         "authorBottomLeftEnabled": true,
-        "sloganEnabled": true,
-        "titleEnabled": true,
         "headerEnabled": true
       },
       "active": true,

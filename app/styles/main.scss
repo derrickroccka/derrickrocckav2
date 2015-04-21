@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('../fonts/lemonmilk-webfont.eot');
+    src: url('../fonts/lemonmilk-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lemonmilk-webfont.woff2') format('woff2'),
+         url('../fonts/lemonmilk-webfont.woff') format('woff'),
+         url('../fonts/lemonmilk-webfont.ttf') format('truetype'),
+         url('../fonts/lemonmilk-webfont.svg#lemonmilkregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'krinkes_decor_personal_useRg';
+    src: url('../fonts/krinkesdecorpersonal-webfont.eot');
+    src: url('../fonts/krinkesdecorpersonal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/krinkesdecorpersonal-webfont.woff2') format('woff2'),
+         url('../fonts/krinkesdecorpersonal-webfont.woff') format('woff'),
+         url('../fonts/krinkesdecorpersonal-webfont.ttf') format('truetype'),
+         url('../fonts/krinkesdecorpersonal-webfont.svg#krinkes_decor_personal_useRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'krinkes_regular_personal_usRg';
+    src: url('krinkesregularpersonal-webfont.eot');
+    src: url('krinkesregularpersonal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('krinkesregularpersonal-webfont.woff2') format('woff2'),
+         url('krinkesregularpersonal-webfont.woff') format('woff'),
+         url('krinkesregularpersonal-webfont.ttf') format('truetype'),
+         url('krinkesregularpersonal-webfont.svg#krinkes_regular_personal_usRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 // bower:scss
 @import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 // endbower
@@ -10,7 +46,7 @@
 @import "../styles/_home.scss";
 
 body{
-	margin-top: 10%;
+	margin-top: 96px;
     &.theme1{
         background: #fff200;
     }

@@ -26,11 +26,14 @@
 	* @description This is executed everytime the app starts
 	* @param {Object} $ionicPlatform
 	**/
-	function Run(){
-
+	function Run($rootScope,ServiceHelpers){
+		$rootScope.site = ServiceHelpers.readJsonFile('data/site.json').then(function(result){
+			console.log(result);
+			$rootScope.site = result;
+		});
 	}
 	//Injecting dependencies into Run function
-	Run.$inject = [];
+	Run.$inject = ['$rootScope','ServiceHelpers'];
 	//Attatching Run function into the app
 	angular
 		.module('drkv2App')
@@ -59,9 +62,6 @@
 				Themes: function(ServiceHelpers){
 					return ServiceHelpers.readJsonFile('data/themes.json');
 				},
-				Site: function(ServiceHelpers){
-					return ServiceHelpers.readJsonFile('data/site.json');
-				},
 				Header: function(ServiceHelpers){
 					return ServiceHelpers.readJsonFile('data/header.json');
 				}
@@ -72,7 +72,7 @@
 					controller: 'ControllerTheme as theme'
 				},
 				'header@root': {
-					templateUrl: 'templates/root.header.html',
+					templateUrl: 'templates/header.html',
 					controller: 'ControllerHeader as header'
 				}
 			}
@@ -84,8 +84,8 @@
 			// templateUrl: 'templates/home.html',
 			// controller: 'ControllerHome as home'
 			views: {
-				'home': {
-					templateUrl: 'templates/root.home.html',
+				'main': {
+					templateUrl: 'templates/home.html',
 					controller: 'ControllerHome as home'
 				}
 			}
