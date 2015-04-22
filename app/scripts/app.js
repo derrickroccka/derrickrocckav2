@@ -64,6 +64,9 @@
 				},
 				Header: function(ServiceHelpers){
 					return ServiceHelpers.readJsonFile('data/header.json');
+				},
+				Menu: function(ServiceHelpers){
+					return ServiceHelpers.readJsonFile('data/menu.json');
 				}
 			},
 			views: {
@@ -74,6 +77,14 @@
 				'header@root': {
 					templateUrl: 'templates/header.html',
 					controller: 'ControllerHeader as header'
+				},
+				'footer@root':{
+					templateUrl: 'templates/footer.html',
+					controller: 'ControllerFooter as footer'
+				},
+				'menu@root':{
+					templateUrl: 'templates/menu.html',
+					controller: 'ControllerMenu as menu'
 				}
 			}
 		})

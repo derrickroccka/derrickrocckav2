@@ -4,7 +4,10 @@
       "preferences": {
         "menuLeftEnabled": false,
         "menuCenterEnabled": true,
-        "menuBottomEnabled": true,
+        "menu": {
+          "position": "footer",
+          "enabled": true
+        },
         "tipsEnabled": false,
         "badgesEnabled": false,
         "copyright": {

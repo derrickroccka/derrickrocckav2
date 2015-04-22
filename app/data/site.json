@@ -1,14 +1,4 @@
 {
-  "menu": {
-    "home": {
-      "active": true,
-      "url": "/home"
-    },
-    "test": {
-      "active": true,
-      "url": "/test"
-    }
-  },
   "brandLogo": {
     "xl": "/images/brand-logo-xl.png",
     "l": "/images/brand-logo-l.png",
