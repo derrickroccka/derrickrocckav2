@@ -35,6 +35,9 @@
 
 		}
 		#headerSlogan{
+			@include breakpoint($breakpoint-small-range) {
+				display: none;
+			}
 			@include transform(rotate(-18deg));
 			color: $color-text-header;
 			font-family: $font-quote;

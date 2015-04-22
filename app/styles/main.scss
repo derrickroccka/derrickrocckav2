@@ -44,10 +44,16 @@
 @import "breakpoint-sass/stylesheets/_breakpoint.scss";
 @import "../styles/_effects.scss";
 @import "../styles/_header.scss";
+@import "../styles/_footer.scss";
 @import "../styles/_home.scss";
 
 body{
 	margin-top: 96px;
+	overflow: hidden;
+	ul{
+		padding: 0;
+		text-decoration: none;
+	}
     &.theme1{
         background: #fff200;
         blockquote{
