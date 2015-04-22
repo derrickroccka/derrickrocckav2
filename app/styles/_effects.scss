@@ -1,0 +1,52 @@
+.theme1{
+	.effect{
+		a {
+			position: relative;
+			display: inline-block;
+			margin: 15px 25px;
+			outline: none;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 400;
+			text-shadow: 0 0 1px rgba(255,255,255,0.3);
+			font-size: 1.35em;
+		}
+
+		a:hover,
+		a:focus {
+			outline: none;
+		}
+		&.fill a {
+			padding: 10px 0;
+			// border-top: 2px solid #0972b4;
+			color: $color-secondary;
+			text-shadow: none;
+		} 
+
+		&.fill a::before {
+			@include transition(max-width 0.5s);
+			border-bottom: 2px solid #fff;
+			color: $color-third;
+			content: attr(data-hover);
+			left: 0;
+			max-width: 0;
+			overflow: hidden;
+			padding: 10px 0;
+			position: absolute;
+			// text-shadow: 0px -1px 2px #888;
+			top: 0;
+			// -moz-transition: ;
+			// -webkit-transition: max-width 0.5s;
+			// transition: max-width 0.5s;
+
+		}
+
+		&.fill a:hover::before,
+		&.fill a:focus::before {
+			max-width: 100%;
+		}
+
+	}
+}

@@ -26,14 +26,23 @@
 	* @description This is executed everytime the app starts
 	* @param {Object} $ionicPlatform
 	**/
-	function Run($rootScope,ServiceHelpers){
+	function Run($rootScope,$state,ServiceHelpers){
+		$rootScope.goTo = function(state, params) {
+			if(params !== null && params !== undefined){
+				$state.go(state, params);
+			}
+			else{
+				$state.go(state, {});
+			}
+			$state.go(state, {});
+		};
 		$rootScope.site = ServiceHelpers.readJsonFile('data/site.json').then(function(result){
 			console.log(result);
 			$rootScope.site = result;
 		});
 	}
 	//Injecting dependencies into Run function
-	Run.$inject = ['$rootScope','ServiceHelpers'];
+	Run.$inject = ['$rootScope','$state','ServiceHelpers'];
 	//Attatching Run function into the app
 	angular
 		.module('drkv2App')

@@ -1,0 +1,19 @@
+<!-- this is appended into <header ng-view="header"> in templates/root.html -->
+<nav ng-show="theme.activeTheme.preferences.header.enabled === true">
+	<!-- brand logo -->
+	<figure id="headerBrandLogo" 
+			ng-click="goTo('test',{})"
+			ng-show="header.preferences.brandLogo.enabled === true">
+		<img src="{{site.brandLogo.m}}" alt="">
+	</figure>
+	<!-- title and tagline -->
+	<div id="headerTitle">
+		<span ng-if="header.preferences.title.enabled">{{site.title}}</span>
+		<br ng-if="header.preferences.title.enabled && header.preferences.tagline.enabled">
+		<span ng-if="header.preferences.tagline.enabled">{{site.tagline}}</span>
+	</div>
+	<!-- slogan -->
+	<div id="headerSlogan">
+		<span ng-if="header.preferences.slogan.enabled">{{site.slogan}}</span>
+	</div>
+</nav>

@@ -1,0 +1,20 @@
+.theme1{
+	#footer{
+		.menu{
+			font-family: $font-secondary;
+			text-align: right;
+			font-size: 1.5rem;
+			@include breakpoint($breakpoint-small-range) {
+				text-align: center;
+			}
+			ul{
+				li{
+					display: inline;
+					@include breakpoint($breakpoint-small-range) {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
