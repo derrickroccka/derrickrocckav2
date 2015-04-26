@@ -97,7 +97,7 @@
 				}
 			}
 		})
-		.state('root.home',{
+		.state('home',{
 			parent: 'root',
 			url:'/home',
 			abstract: false,

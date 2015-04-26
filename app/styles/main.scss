@@ -39,9 +39,10 @@
 // endbower
 // Your application styles go here
 @import "bourbon/app/assets/stylesheets/_bourbon";
+@import "breakpoint-sass/stylesheets/_breakpoint.scss";
 @import "../styles/_variables.scss";
 @import "../styles/_mixins.scss";
-@import "breakpoint-sass/stylesheets/_breakpoint.scss";
+@import "../styles/_helpers.scss";
 @import "../styles/_effects.scss";
 @import "../styles/_header.scss";
 @import "../styles/_footer.scss";

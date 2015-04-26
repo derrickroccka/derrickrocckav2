@@ -1,0 +1,24 @@
+/**
+*
+* POSITIONING
+*
+**/
+.inline-block{
+	@include inline-block;
+}
+/**
+*
+* LISTS
+*
+**/
+
+.listHorizontal{
+	li{
+		display: inline;
+	}
+}
+.listVertical{
+	li{
+		display: block;
+	}
+}

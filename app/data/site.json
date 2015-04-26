@@ -10,6 +10,24 @@
   "tagline": "More than",
   "copyright": "Proudly done by me :)",
   "slogan": "Do the knowledge",
+  "socialLinks": {
+    "enabled": true,
+    "position": "footer",
+    "links": {
+      "twitter": {
+        "url": "http://twitter.com/derrickroccka",
+        "title": "@derrickroccka"
+      },
+      "youtube": {
+        "url": "http://youtube.com/user/derrickroccka",
+        "title": "My channel"
+      },
+      "mail": {
+        "address": "derrickroccka@gmail.com",
+        "title": "Contact me!"
+      }
+    }
+  },
   "icons": {
     "social": {
       "twitter": "",
