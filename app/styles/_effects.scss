@@ -2,16 +2,16 @@
 	.effect{
 		a {
 			position: relative;
-			display: inline-block;
-			margin: 15px 25px;
+			// display: inline-block;
+			// margin: 15px 25px;
 			outline: none;
-			color: #fff;
+			// color: $color-tertiary;
 			text-decoration: none;
-			text-transform: uppercase;
+			// text-transform: uppercase;
 			letter-spacing: 1px;
-			font-weight: 400;
-			text-shadow: 0 0 1px rgba(255,255,255,0.3);
-			font-size: 1.35em;
+			// font-weight: 400;
+			// text-shadow: 0 0 1px rgba(255,255,255,0.3);
+			// font-size: 1.35em;
 		}
 
 		a:hover,
@@ -28,7 +28,7 @@
 		&.fill a::before {
 			@include transition(max-width 0.5s);
 			border-bottom: 2px solid #fff;
-			color: $color-third;
+			color: $color-brand;
 			content: attr(data-hover);
 			left: 0;
 			max-width: 0;

@@ -44,6 +44,7 @@
 @import "../styles/_mixins.scss";
 @import "../styles/_helpers.scss";
 @import "../styles/_effects.scss";
+@import "../styles/_socialLinks.scss";
 @import "../styles/_header.scss";
 @import "../styles/_footer.scss";
 @import "../styles/_home.scss";
@@ -55,6 +56,7 @@ body{
 		padding: 0;
 		text-decoration: none;
 	}
+    .angular-center-container { position: fixed; top:0; left:0; height:100%; width:100%; display:table; pointer-events: none; z-index:9999; } .angular-centered { display: table-cell; vertical-align: middle; text-align: center; }
     &.theme1{
         background: #fff200;
         blockquote{

@@ -15,9 +15,9 @@ $bg-header: #000;
 // Defining values
 $breakpoint-small-range:   (0 640px);       /* 0, 640px */
 $breakpoint-medium-range:  (40.063em 64em);  /* 641px, 1024px */
-$breakpoint-large-range:   (64.063em 90em);  /* 1025px, 1440px */
-$breakpoint-xlarge-range:  (90.063em 120em); /* 1441px, 1920px */
-$breakpoint-xxlarge-range: (120.063em);       /* 1921px */
+$breakpoint-large-range:   (64.063em 360.063em);  /* 1025px, 1921px */
+// $breakpoint-xlarge-range:  (90.063em 120em); 1441px, 1920px
+// $breakpoint-xxlarge-range: (120.063em);       /* 1921px */
 
 /**
 *
@@ -27,8 +27,9 @@ $breakpoint-xxlarge-range: (120.063em);       /* 1921px */
 
 $color-primary: #fff200;
 $color-secondary: #000;
-$color-third: #fff;
+$color-tertiary: #fff;
 $color-text-header: #fff;
+$color-brand: #e87bae;
 
 /**
 *

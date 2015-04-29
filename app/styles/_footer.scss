@@ -9,6 +9,9 @@
 			@include flex-direction(column);
 			text-align: center;
 		}
+		bottom: 0;
+		position: fixed;
+		width: 100%;
 		.socialLinks{
 			@include breakpoint($breakpoint-small-range) {
 				@include order(2);
@@ -21,7 +24,18 @@
 			text-align: right;
 			font-size: 1.5rem;
 			min-width: 50%;
-
+			a{
+				@include inline-block;
+				position: relative;
+				margin: 15px 25px;
+				outline: none;
+				color: $color-secondary;
+				text-decoration: none;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-weight: 400;
+				text-shadow: 0 0 1px rgba(255,255,255,0.3);
+			}
 			@include breakpoint($breakpoint-small-range) {
 				text-align: center;
 

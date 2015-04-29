@@ -1,5 +1,6 @@
 <ul>
-	<li ng-repeat="link in site.socialLinks.links">
-		<a href="{{link.url}}"><i class=""></i>{{link.title}}</a>
+	<li ng-repeat="link in site.socialLinks.links" class="effect fill">
+		<a href="{{link.url}}" ng-if="link.address === undefined" data-hover="{{link.title}}"><i class=""></i>{{link.title}}</a>
+		<a href="mailto:{{link.address}}" ng-if="link.address !== undefined" data-hover="{{link.title}}"><i class=""></i>{{link.title}}</a>
 	</li>
 </ul>
