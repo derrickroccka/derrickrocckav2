@@ -1,1 +1,1 @@
-put -rp "${HOME}/clone/*" /var/www/
+put -rp "/dist/*" /var/www/
