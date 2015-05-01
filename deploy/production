@@ -1,1 +1,1 @@
-put -rp "../dist/*" /var/www/
+put -rp "${HOME}/Identity/code/labs/drkv2/dist/*" /var/www/
