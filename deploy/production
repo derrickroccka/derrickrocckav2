@@ -1,1 +1,1 @@
-put -rp "/dist/*" /var/www/
+put -rp "dist/*" /var/www/
